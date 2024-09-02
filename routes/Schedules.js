@@ -296,3 +296,5 @@ router.delete("/:deviceName", async (req, res) => {
 });
 
 module.exports = router;
+
+//waduh apalah

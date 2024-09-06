@@ -160,4 +160,24 @@ router.delete("/:deviceName", async (req, res) => {
   }
 });
 
+// router.post("/feedNow", async (req, res) => {
+//   console.log("Received POST request to /feedNow");
+//   try {
+//     // Activate the feed (turn on pin V0)
+//     await sendDataToBlynk("V0", 1);
+
+//     // Wait for 5 seconds
+//     setTimeout(async () => {
+//       // Turn off the feed (turn off pin V0)
+//       await sendDataToBlynk("V0", 0);
+//     }, 5000);
+
+//     res.status(200).json({ message: "Feed Now action successful" });
+//   } catch (error) {
+//     console.error("Error during Feed Now action:", error.message);
+//     res.status(500).json({ message: "Feed Now action failed" });
+//   }
+// });
+
+
 module.exports = router;
